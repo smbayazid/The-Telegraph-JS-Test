@@ -11,7 +11,7 @@ function getArticleId() {
             const metas = document.getElementsByTagName('meta');
 
             for (let i = 0; i < metas.length; i++) {
-                if (metas[i].getAttribute('name') === 'DCSext.articleFirstPublished') {
+                if (metas[i].getAttribute('name') === 'tmgads.articleid') {
                     articleId = metas[i].getAttribute('content');
                 }
             }
